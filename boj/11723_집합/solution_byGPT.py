@@ -1,6 +1,8 @@
 import sys
 input = sys.stdin.readline
 
+# 메모리 초과뜸
+
 m = int(input())
 s = set()
 out = []
