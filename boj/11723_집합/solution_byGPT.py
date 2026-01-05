@@ -1,11 +1,9 @@
 import sys
 input = sys.stdin.readline
+write = sys.stdout.write
 
-# 메모리 초과뜸
-
-m = int(input())
 s = set()
-out = []
+m = int(input())
 
 for _ in range(m):
     cmd = input().split()
@@ -17,14 +15,14 @@ for _ in range(m):
         s.clear()
     else:
         x = int(cmd[1])
-
         if op == "add":
             s.add(x)
         elif op == "remove":
-            s.discard(x)              # 없으면 무시 (remove처럼 에러 안 남)
+            s.discard(x)
         elif op == "check":
-            out.append("1\n" if x in s else "0\n")
+            write("1\n" if x in s else "0\n")
         elif op == "toggle":
-            s.remove(x) if x in s else s.add(x)
-
-sys.stdout.write("".join(out))
+            if x in s:
+                s.remove(x)
+            else:
+                s.add(x)
