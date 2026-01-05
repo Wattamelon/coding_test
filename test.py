@@ -1,10 +1,9 @@
-from collections import defaultdict
+import sys
 
-group = defaultdict(list)
-data = [("a", 10), ("b", 20), ("a", 30)]
+input = sys.stdin.readline
 
-for k, v in data:
-    group[k].append(v)
+n = int(input())
 
-print(group["a"])  # [10, 30]
-print(group["b"])  # [20]
+nums = [int(input())for _ in range(n)]
+nums.sort()
+sys.stdout.write(",".join(map(str , nums)))
