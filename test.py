@@ -1,9 +1,11 @@
 import sys
-
 input = sys.stdin.readline
 
-n = int(input())
+h, w = map(int, input().split())
 
-nums = [int(input())for _ in range(n)]
-nums.sort()
-sys.stdout.write(",".join(map(str , nums)))
+for _ in range(h):
+    row = input().strip()
+    print(row)
+for _ in range(h):
+    a = input()
+    print(a)
