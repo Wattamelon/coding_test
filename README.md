@@ -42,6 +42,9 @@
 - `solution_byGPT.py`
   - 문제를 푼 뒤 GPT로부터 얻은 **최적 풀이/개선 풀이**를 저장
 
+- `review.md`
+  - 문제를 푼 뒤 self-review
+
 - `other_solution.py` *(선택)*
   - 다른 사람의 풀이 중 참고할 가치가 높은 코드를 저장
 
