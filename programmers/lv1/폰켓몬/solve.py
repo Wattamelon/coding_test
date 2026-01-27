@@ -11,6 +11,3 @@ def solution(nums):
         return poke
     else:
         return len(dictionary)
-
-
-print(solution([3,3,3,2,2,2]))
